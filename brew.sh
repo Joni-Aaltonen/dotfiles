@@ -49,6 +49,11 @@ brew install sfnt2woff
 brew install sfnt2woff-zopfli
 brew install woff2
 
+
+#Install node
+brew install nvm
+brew install node
+
 # Install some CTF tools; see https://github.com/ctfs/write-ups.
 brew install aircrack-ng
 brew install bfg
@@ -75,6 +80,10 @@ brew install ucspi-tcp # `tcpserver` etc.
 brew install xpdf
 brew install xz
 
+# Install Heroku
+brew install heroku-toolbelt
+heroku update
+
 # Install other useful binaries.
 brew install ack
 #brew install exiv2
@@ -93,5 +102,60 @@ brew install tree
 brew install vbindiff
 brew install zopfli
 
+# Install Cask
+brew install caskroom/cask/brew-cask
+brew tap caskroom/versions
+
+# Core casks
+brew cask install --appdir="/Applications" alfred
+brew cask install --appdir="~/Applications" iterm2
+brew cask install --appdir="~/Applications" java8
+brew cask install --appdir="~/Applications" xquartz
+
+# Development tool casks
+brew cask install --appdir="/Applications" sublime-text
+brew cask install --appdir="/Applications" atom
+brew cask install --appdir="/Applications" virtualbox
+brew cask install --appdir="/Applications" macdown
+
+# Misc casks
+brew cask install --appdir="/Applications" google-chrome
+brew cask install --appdir="/Applications" firefox
+brew cask install --appdir="/Applications" skype
+brew cask install --appdir="/Applications" slack
+brew cask install --appdir="/Applications" dropbox
+brew cask install --appdir="/Applications" evernote
+brew cask install --appdir="/Applications" 1password
+brew cask install --appdir="/Applications" apptivate
+brew cask install --appdir="/Applications" bartender
+brew cask install --appdir="/Applications" boom
+brew cask install --appdir="/Applications" apptivate
+brew cask install --appdir="/Applications" dash
+brew cask install --appdir="/Applications" discord
+brew cask install --appdir="/Applications" divvy
+brew cask install --appdir="/Applications" fabric
+brew cask install --appdir="/Applications" kaleidoscope
+brew cask install --appdir="/Applications" keka
+brew cask install --appdir="/Applications" paw
+brew cask install --appdir="/Applications" sketch
+brew cask install --appdir="/Applications" spotify
+brew cask install --appdir="/Applications" tower
+brew cask install --appdir="/Applications" transmission
+brew cask install --appdir="/Applications" transmit
+brew cask install --appdir="/Applications" twitter
+
+
+#Install Android Studio
+brew cask install --appdir="~/Applications" android-studio
+
+brew install android-sdk
+
+echo "TODO: Install docker and npm etc"
+
 # Remove outdated versions from the cellar.
 brew cleanup
+
+#NPM Essentials
+npm install -g grunt-cli
+npm install -g jshint
+npm install -g less
