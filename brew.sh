@@ -145,6 +145,9 @@ brew cask install --appdir="/Applications" tower
 brew cask install --appdir="/Applications" transmission
 brew cask install --appdir="/Applications" transmit
 brew cask install --appdir="/Applications" twitter
+brew cask install --appdir="/Applications" sequel-pro
+brew cask install --appdir="/Applications" karabiner-elements
+brew cask install --appdir="/Applications" intellij-idea
 
 
 #Install Android Studio
