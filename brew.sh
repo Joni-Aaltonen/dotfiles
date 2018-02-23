@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
 # Install command-line tools using Homebrew.
 
 # Make sure we’re using the latest Homebrew.
@@ -150,7 +152,16 @@ brew cask install --appdir="~/Applications" android-studio
 
 brew install android-sdk
 
-echo "TODO: Install docker and npm etc"
+echo "TODO: Install docker and npm etc
+
+#install nvm and node
+brew install nvm
+echo "source $(brew --prefix nvm)/nvm.sh" >> ~/.bash_profile
+nvm install stable
+npm install -g npm@latest
+
+brew install yarn --without-node
+
 
 # Remove outdated versions from the cellar.
 brew cleanup
@@ -159,3 +170,4 @@ brew cleanup
 npm install -g grunt-cli
 npm install -g jshint
 npm install -g less
+

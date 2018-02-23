@@ -18,6 +18,7 @@ To update, `cd` into your local `dotfiles` repository and then:
 
 ```bash
 source bootstrap.sh
+source brew.sh
 ```
 
 Alternatively, to update while avoiding the confirmation prompt:
