@@ -37,6 +37,9 @@ brew install wget --with-iri
 
 # Install GnuPG to enable PGP-signing commits.
 brew install gnupg
+brew install gnupg2 
+brew install pinentry-mac
+
 
 # Install more recent versions of some macOS tools.
 brew install vim --with-override-system-vi
@@ -55,6 +58,12 @@ brew install woff2
 #Install node
 brew install nvm
 brew install node
+
+#Install fish
+brew install fish
+curl -L https://get.oh-my.fish | fish
+sudo echo /usr/local/bin/fish >> /etc/shells
+chsh -s /usr/local/bin/fish
 
 # Install some CTF tools; see https://github.com/ctfs/write-ups.
 brew install aircrack-ng
@@ -81,6 +90,7 @@ brew install tcptrace
 brew install ucspi-tcp # `tcpserver` etc.
 brew install xpdf
 brew install xz
+brew install mysql
 
 # Install Heroku
 brew install heroku-toolbelt
@@ -144,18 +154,24 @@ brew cask install --appdir="/Applications" spotify
 brew cask install --appdir="/Applications" tower
 brew cask install --appdir="/Applications" transmission
 brew cask install --appdir="/Applications" transmit
+brew cask install --appdir="/Applications" cyberduck
 brew cask install --appdir="/Applications" twitter
 brew cask install --appdir="/Applications" sequel-pro
 brew cask install --appdir="/Applications" karabiner-elements
 brew cask install --appdir="/Applications" intellij-idea
+brew cask install --appdir="/Applications" airmail
+brew cask install --appdir="/Applications" spamsieve
 
 
 #Install Android Studio
 brew cask install --appdir="~/Applications" android-studio
 
+#Install nerd fonts
+brew tap caskroom/fonts
+brew cask install font-hack-nerd-font
+
 brew install android-sdk
 
-echo "TODO: Install docker and npm etc
 
 #install nvm and node
 brew install nvm
@@ -173,4 +189,7 @@ brew cleanup
 npm install -g grunt-cli
 npm install -g jshint
 npm install -g less
+
+#Install cocoapods
+sudo gem install cocoapods
 
